@@ -1,0 +1,54 @@
+#Let's Build our ROBO BARISTA!!!!!
+
+#Greet our customer!
+
+print("Hello , Welcome to Robot Barista!!!!")
+
+#Ask the name of our customer with the input() Function and stores the value in the variable name!
+
+name = input("What is your name?\n")
+
+#Evil Ben hates IT and Coffee, We can;t have this guy in our coffee shop.
+#Anyone other than EVIL Ben can come and have our delicious coffee.
+
+if name == "Ben":
+    Evil_Status = input("Are you evil?\n")
+    if Evil_Status == "yes":
+        print("We know you EVIL BEN, Get out of here!!!!!!!!")
+        exit()
+    else:
+        print("You're good to go! Come on in!!!!")
+else:
+    print("Hello " + name + " thank you so much for coming in today!!")
+
+#Coffee menu
+
+menu = "Black Coffee, Latte, Capuccino, Tall Latte & Chai"
+
+#Ask the customer what would they like to have and store that value in the variable order.
+
+print("So, What would you like from our menu today?" + " Here is what we are serving. " + menu + ".\n")
+
+order = input()
+#The price of anything from the menu is 10 Rupees!!!! Except Chai, Chai is costly because Chai is love!!!!!
+
+if order == "Chai":
+    price = 20
+else:
+    price = 10
+
+#Ask the customer how much coffee do they want and stores its value in the variable Order!
+
+Quantity = input("Cool, How many " + order + " do you want?\n")
+
+#Calculate the total of the order.
+
+total = price * int(Quantity)
+
+#Tells the customer their total.
+
+print("Thank you " + name + ". Here is your total: " + str(total) + " Rupees")
+
+#Tells the customer that their order would be ready in a moment.
+
+print("Sounds fair " + name + ", we'll have your " + str(Quantity) + " " + order +  " ready in a moment.")
